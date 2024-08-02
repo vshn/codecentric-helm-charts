@@ -1,6 +1,39 @@
 apiVersion: v1
 entries:
   keycloak:
+  - apiVersion: v2
+    appVersion: 17.0.1-legacy
+    created: "2024-08-02T16:04:34.061850306Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 10.16.2
+    description: Open Source Identity and Access Management For Modern Applications
+      and Services
+    digest: 79472ca5bd9112f33dab711b7a92678c32fbcf97db331d8f11395aa46e97066a
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_icon_512px.svg
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - ldap
+    maintainers:
+    - email: unguiculus@gmail.com
+      name: unguiculus
+    - email: thomas.darimont+github@gmail.com
+      name: thomasdarimont
+    name: keycloak
+    sources:
+    - https://github.com/codecentric/helm-charts
+    - https://github.com/jboss-dockerfiles/keycloak
+    - https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    urls:
+    - https://github.com/vshn/codecentric-helm-charts/releases/download/keycloak-18.4.4/keycloak-18.4.4.tgz
+    version: 18.4.4
   - apiVersion: v1
     appVersion: 12.0.4
     created: "2021-06-07T10:11:52.13111717Z"
@@ -9,7 +42,8 @@ entries:
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 10.3.13
-    description: Open Source Identity and Access Management For Modern Applications and Services
+    description: Open Source Identity and Access Management For Modern Applications
+      and Services
     digest: 702e4ba611b54bcfe467d8b95d3f7d51fbe6a081b206ca1bf7eae1c9174e7c07
     home: https://www.keycloak.org/
     icon: https://www.keycloak.org/resources/images/keycloak_logo_480x108.png
@@ -33,7 +67,60 @@ entries:
     urls:
     - https://github.com/vshn/codecentric-helm-charts/releases/download/keycloak-11.0.0/keycloak-11.0.0.tgz
     version: 11.0.0
+  keycloakx:
+  - apiVersion: v2
+    appVersion: 25.0.0
+    created: "2024-08-02T16:04:34.264229441Z"
+    description: Keycloak.X - Open Source Identity and Access Management for Modern
+      Applications and Services
+    digest: 997086be64ab9b886983006c77a32d2c5c5b7b618889ae489b36b2f88f2db3c8
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_logo_200px.svg
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - oauth
+    - ldap
+    - keycloakx
+    - quarkus
+    maintainers:
+    - email: thomas.darimont+github@gmail.com
+      name: thomasdarimont
+    name: keycloakx
+    sources:
+    - https://github.com/codecentric/helm-charts
+    - https://github.com/keycloak/keycloak/tree/main/quarkus/container
+    urls:
+    - https://github.com/vshn/codecentric-helm-charts/releases/download/keycloakx-2.4.3/keycloakx-2.4.3.tgz
+    version: 2.4.3
   mailhog:
+  - apiVersion: v2
+    appVersion: v1.0.1
+    created: "2024-08-02T16:04:34.468653453Z"
+    description: An e-mail testing tool for developers
+    digest: 512aa7676be9e46c2d521337cbc9e17b341652f530edc410d0f76f3d7b3bee64
+    home: http://iankent.uk/project/mailhog/
+    icon: https://raw.githubusercontent.com/mailhog/MailHog-UI/master/assets/images/hog.png
+    keywords:
+    - mailhog
+    - mail
+    - smtp
+    - email
+    - e-mail
+    - testing
+    maintainers:
+    - email: unguiculus@gmail.com
+      name: unguiculus
+    name: mailhog
+    sources:
+    - https://github.com/mailhog/MailHog
+    type: application
+    urls:
+    - https://github.com/vshn/codecentric-helm-charts/releases/download/mailhog-5.2.3/mailhog-5.2.3.tgz
+    version: 5.2.3
   - apiVersion: v2
     appVersion: v1.0.1
     created: "2021-06-07T10:11:52.246008557Z"
@@ -58,4 +145,4 @@ entries:
     urls:
     - https://github.com/vshn/codecentric-helm-charts/releases/download/mailhog-4.1.0/mailhog-4.1.0.tgz
     version: 4.1.0
-generated: "2021-06-07T10:11:51.960288457Z"
+generated: "2024-08-02T16:04:34.468668752Z"
